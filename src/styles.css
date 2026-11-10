@@ -1,0 +1,177 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * LL Rentals design system — Royal Blue (#0B4DB8) + White, gold accent.
+ * All colors are oklch tokens. Never hardcode colors in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --radius: 1.25rem;
+  --background: oklch(0.995 0.004 250);
+  --foreground: oklch(0.22 0.05 265);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.05 265);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.05 265);
+  --primary: oklch(0.46 0.19 264);
+  --primary-foreground: oklch(0.99 0.005 250);
+  --primary-soft: oklch(0.94 0.035 258);
+  --secondary: oklch(0.96 0.018 255);
+  --secondary-foreground: oklch(0.34 0.13 264);
+  --muted: oklch(0.965 0.012 255);
+  --muted-foreground: oklch(0.53 0.035 258);
+  --accent: oklch(0.93 0.045 255);
+  --accent-foreground: oklch(0.34 0.13 264);
+  --gold: oklch(0.82 0.135 84);
+  --gold-foreground: oklch(0.28 0.06 70);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.99 0.003 248);
+  --border: oklch(0.9 0.02 255);
+  --input: oklch(0.9 0.02 255);
+  --ring: oklch(0.46 0.19 264);
+
+  --gradient-royal: linear-gradient(135deg, oklch(0.46 0.19 264), oklch(0.6 0.16 250));
+  --gradient-soft: linear-gradient(180deg, oklch(0.985 0.012 255), oklch(1 0 0));
+  --shadow-soft: 0 12px 40px -18px oklch(0.46 0.19 264 / 0.35);
+  --shadow-lift: 0 26px 60px -24px oklch(0.46 0.19 264 / 0.45);
+}
+
+.dark {
+  --background: oklch(0.19 0.045 265);
+  --foreground: oklch(0.97 0.008 250);
+  --card: oklch(0.24 0.05 265);
+  --card-foreground: oklch(0.97 0.008 250);
+  --popover: oklch(0.24 0.05 265);
+  --popover-foreground: oklch(0.97 0.008 250);
+  --primary: oklch(0.66 0.17 258);
+  --primary-foreground: oklch(0.16 0.04 265);
+  --primary-soft: oklch(0.3 0.07 264);
+  --secondary: oklch(0.3 0.06 264);
+  --secondary-foreground: oklch(0.97 0.008 250);
+  --muted: oklch(0.3 0.06 264);
+  --muted-foreground: oklch(0.75 0.03 256);
+  --accent: oklch(0.32 0.07 264);
+  --accent-foreground: oklch(0.97 0.008 250);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.66 0.17 258);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility gradient-royal {
+  background-image: var(--gradient-royal);
+}
+
+@utility text-gradient-royal {
+  background-image: var(--gradient-royal);
+  background-clip: text;
+  color: transparent;
+}
+
+@utility shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+@utility shadow-lift {
+  box-shadow: var(--shadow-lift);
+}
+
+@utility card-lift {
+  transition:
+    transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.35s ease;
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lift);
+  }
+}
+
+@utility float-slow {
+  animation: llfloat 7s ease-in-out infinite;
+}
+
+@keyframes llfloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+@utility reveal-up {
+  animation: llreveal 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes llreveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
