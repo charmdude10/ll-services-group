@@ -1,6 +1,6 @@
-# LL Rentals — Making Every Celebration Magical
+# LL Servicegroup — Making Every Celebration Magical
 
-JavaScript (JSX) version of the LL Rentals event rental website.
+JavaScript (JSX) version of the LL Servicegroup event rental website.
 
 ## Run locally
 

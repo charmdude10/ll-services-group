@@ -73,14 +73,14 @@ const Route = createRootRouteWithContext()({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "LL Rentals | Making Every Celebration Magical" },
+      { title: "LL Servicegroup | Making Every Celebration Magical" },
       {
         name: "description",
         content:
           "Premium party and event rentals: chairs, tables, bouncing castles, LED numbers, balloon d\xE9cor and full event styling.",
       },
-      { name: "author", content: "LL Rentals" },
-      { property: "og:title", content: "LL Rentals | Making Every Celebration Magical" },
+      { name: "author", content: "LL Servicegroup" },
+      { property: "og:title", content: "LL Servicegroup | Making Every Celebration Magical" },
       {
         property: "og:description",
         content: "Premium party rentals, d\xE9cor and event styling for kids and adults.",
