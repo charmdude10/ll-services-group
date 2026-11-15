@@ -72,7 +72,7 @@ function Gallery() {
                 height={900}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <span className="absolute inset-0 flex items-end justify-between gap-2 bg-gradient-to-t from-primary/80 via-primary/10 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span className="absolute inset-0 flex items-end justify-between gap-2 bg-linear-to-t from-primary/80 via-primary/10 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <span className="text-left text-sm font-semibold text-primary-foreground">
                   {item.cat}
                 </span>

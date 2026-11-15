@@ -235,7 +235,7 @@ function WhyUs() {
   return (
     <section className="px-5 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading eyebrow="Why Choose Us" title="Why Choose LL Servicegroup" />
+        <SectionHeading eyebrow="Why Choose Us" title="Why Choose LL Servicesgroup" />
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {reasons.map((r, i) => (
             <div
