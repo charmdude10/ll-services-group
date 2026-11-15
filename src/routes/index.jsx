@@ -16,11 +16,11 @@ import { Contact, Footer, WhatsAppButton } from "@/components/site/Contact";
 const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "LL Servicegroup | Party & Event Rentals, Bouncing Castles, LED D\xE9cor" },
+      { title: "LL Servicesgroup | Party & Event Rentals, Bouncing Castles, LED D\xE9cor" },
       {
         name: "description",
         content:
-          "LL Servicegroup provides premium chairs & tables, bouncing castles, LED numbers, balloon d\xE9cor and full event styling. Making every celebration magical.",
+          "LL Servicesgroup provides premium chairs & tables, bouncing castles, LED numbers, balloon d\xE9cor and full event styling. Making every celebration magical.",
       },
       { property: "og:title", content: "LL Servicegroup | Making Every Celebration Magical" },
       {

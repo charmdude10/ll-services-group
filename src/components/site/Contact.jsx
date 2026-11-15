@@ -252,8 +252,8 @@ function Contact() {
                 { icon: MessageCircle, label: "WhatsApp us", href: `https://wa.me/${WHATSAPP}` },
                 {
                   icon: Mail,
-                  label: "eventrentals@llservicegroup.co.uk",
-                  href: "mailto:eventrentals@llservicegroup.co.uk",
+                  label: "eventrentals@llservicesgroup.co.uk",
+                  href: "mailto:eventrentals@llservicesgroup.co.uk",
                 },
               ].map((c) => (
                 <a

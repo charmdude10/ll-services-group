@@ -46,7 +46,7 @@ function Navbar() {
           </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-lg leading-tight font-bold">
-              LL SERVICE GROUP
+              LL SERVICES GROUP
             </span>
             <span className="block truncate text-[11px] tracking-wide text-muted-foreground">
               Making Every Celebration Magical
