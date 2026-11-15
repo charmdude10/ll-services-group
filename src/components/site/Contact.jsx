@@ -304,7 +304,7 @@ function Footer() {
     <footer className="gradient-royal px-5 pt-16 pb-8 text-primary-foreground">
       <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-4">
         <div>
-          <h3 className="font-display text-2xl font-bold">LL Servicegroup</h3>
+          <h3 className="font-display text-2xl font-bold">LL Servicesgroup</h3>
           <p className="mt-2 text-sm text-primary-foreground/80">
             Making Every Celebration Magical.
           </p>
@@ -372,7 +372,7 @@ function Footer() {
         </div>
       </div>
       <p className="mx-auto mt-12 max-w-6xl border-t border-primary-foreground/20 pt-6 text-center text-xs text-primary-foreground/70">
-        © 2026 LL Servicegroup. All Rights Reserved.
+        © 2026 LL Servicesgroup. All Rights Reserved.
       </p>
     </footer>
   );

@@ -122,13 +122,13 @@ function About() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
         <div>
           <span className="inline-block rounded-full bg-primary-soft px-4 py-1.5 text-xs font-semibold tracking-[0.18em] text-primary uppercase">
-            About LL Servicegroup
+            About LL Servicesgroup
           </span>
           <h2 className="mt-4 text-3xl font-bold sm:text-4xl md:text-5xl">
             Your trusted partner for <span className="text-gradient-royal">stress-free events</span>
           </h2>
           <p className="mt-5 text-muted-foreground">
-            LL Servicegroup is your trusted event rental company dedicated to making every
+            LL Servicesgroup is your trusted event rental company dedicated to making every
             celebration stress-free and unforgettable.
           </p>
           <p className="mt-4 text-muted-foreground">
@@ -339,7 +339,7 @@ function CtaBanner() {
           Ready to Make Your Celebration Magical?
         </h2>
         <p className="relative mx-auto mt-4 max-w-xl text-primary-foreground/90">
-          Book LL Servicegroup today and let us take the stress out of planning your event.
+          Book LL Servicesgroup today and let us take the stress out of planning your event.
         </p>
         <div className="relative mt-8 flex flex-wrap justify-center gap-3">
           <Button variant="gold" size="xl" asChild>
